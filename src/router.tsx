@@ -16,6 +16,10 @@ const router = createBrowserRouter([
         path: "detail",
         element: <Detail />,
       },
+      {
+        path: "고등영어",
+        element: <Detail />,
+      },
     ],
   },
 ]);
