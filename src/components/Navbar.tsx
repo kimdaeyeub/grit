@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
@@ -7,31 +6,34 @@ const Navbar = () => {
     navigate("/");
   };
   return (
-    <div className="w-full px-16 py-6 bg-slate-100 flex justify-between items-center">
-      <div onClick={onClickLogo} className="text-5xl font-bold cursor-pointer">
+    <div className="w-full xl:px-52 lg:px-20  px-16  py-5 flex justify-between items-center border-b border-b-gray-300 border-b-1.5">
+      <div
+        onClick={onClickLogo}
+        className="text-5xl font-bold cursor-pointer font-serif"
+      >
         Grit
       </div>
       <div className="flex space-x-12 items-center">
-        <div className="space-x-4">
-          <button className="border-gray-500 border px-4 py-2 text-sm">
+        <div className="hidden lg:flex space-x-4">
+          <button className="border-gray-500 border px-4 py-2 text-xs text-gray-600">
             학원소개
           </button>
-          <button className="border-gray-600 border px-4 py-2 text-sm">
+          <button className="border-gray-500 border px-4 py-2 text-xs text-gray-600">
             학원소식
           </button>
-          <button className="border-gray-600 border px-4 py-2 text-sm">
+          <button className="border-gray-600 border px-4 py-2 text-xs text-gray-600">
             강사진소개
           </button>
-          <button className="border-gray-600 border px-4 py-2 text-sm">
+          <button className="border-gray-600 border px-4 py-2 text-xs text-gray-600">
             강사채용
           </button>
-          <button className="border-gray-600 border px-4 py-2 text-sm">
+          <button className="border-gray-600 border px-4 py-2 text-xs text-gray-600">
             교육관 위치
           </button>
-          <button className="border-gray-600 border px-4 py-2 text-sm">
+          <button className="border-gray-600 border px-4 py-2 text-xs text-gray-600">
             입시정보
           </button>
-          <button className="border-gray-600 border px-4 py-2 text-sm">
+          <button className="border-gray-600 border px-4 py-2 text-xs text-gray-600">
             로그인
           </button>
         </div>
